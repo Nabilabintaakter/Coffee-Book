@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="  bg-[#ffbf0062]">
+        <div className="  bg-[#ffbf0062] fixed backdrop-blur-sm w-full z-50">
             <div className="navbar container mx-auto flex flex-col md:flex-row gap-4 md:gap-0 px-3 md:px-12">
                 <div className="flex-1">
                     <div className="w-8 h-8 md:w-10 md:h-10"><img src='/icons8-coffee-96.png' alt="" /></div>
-                    <a className="btn btn-ghost text-xl md:text-2xl">COFFEE_BOOK</a>
+                    <NavLink to='/' className='ml-5 text-2xl'>COFFEE_BOOK</NavLink>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">
